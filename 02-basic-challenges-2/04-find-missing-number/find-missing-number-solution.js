@@ -1,5 +1,5 @@
 function findMissingNumber(arr) {
-  // If the array is empty or undefined, return undefined
+  // If the array is empty or undefined, return undef
   if (!arr || arr.length === 0) {
     return undefined;
   }
