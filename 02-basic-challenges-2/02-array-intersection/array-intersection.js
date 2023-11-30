@@ -1,14 +1,18 @@
 function arrayIntersection(arr1, arr2) {
-  const set1 = new Set(arr1);
-  const same = [];
+  //use set to store elements of arr1, then loop over arr2, check if each elem is in the Set with .has()
 
-  for (const num of arr2) {
+  const set1 = new Set(arr1);
+  let resultArr = [];
+
+  for (let num of arr2) {
     if (set1.has(num)) {
-      same.push(num);
+      resultArr.push(num);
     }
   }
 
-  return same;
+  // arr2.map((elem) => (set1.has(elem) ? resultArr.push(elem) : null));
+
+  return resultArr;
 }
 
 module.exports = arrayIntersection;
