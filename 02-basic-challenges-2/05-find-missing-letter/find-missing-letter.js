@@ -1,3 +1,3 @@
-function findMissingLetter(arr) {}
+function findMissingLetter() {}
 
 module.exports = findMissingLetter;
